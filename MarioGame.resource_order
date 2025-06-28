@@ -53,6 +53,7 @@
     {"name":"Thwomp","order":7,"path":"objects/Thwomp/Thwomp.yy",},
     {"name":"Blooper","order":8,"path":"objects/Blooper/Blooper.yy",},
     {"name":"EnemyJumper","order":9,"path":"objects/EnemyJumper/EnemyJumper.yy",},
+    {"name":"Sprite19","order":7,"path":"sprites/Sprite19/Sprite19.yy",},
     {"name":"LavaBall","order":10,"path":"objects/LavaBall/LavaBall.yy",},
   ],
 }

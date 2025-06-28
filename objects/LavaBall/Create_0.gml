@@ -5,5 +5,5 @@ sprite_index = Sprite17;
 image_speed = 0.3;
 
 jumpSpeed = -8;
-gravity = 0.4;
+_gravity = 0.4;
 waitTime = room_speed;

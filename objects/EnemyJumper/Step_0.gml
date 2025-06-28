@@ -10,7 +10,7 @@ switch (state) {
 
     case JumperState.JUMPING:
         y += vsp;
-        vsp += gravity;
+        vsp += _gravity;
         if (y >= startY) {
             y = startY;
             vsp = 0;

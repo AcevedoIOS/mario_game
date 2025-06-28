@@ -4,17 +4,17 @@
   "name": "LavaBall",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,}
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy"
+    "path": "folders/Objetos/Enemies.yy",
   },
   "parentObjectId": {
     "name": "EnemyJumper",
-    "path": "objects/EnemyJumper/EnemyJumper.yy"
+    "path": "objects/EnemyJumper/EnemyJumper.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +33,8 @@
   "solid": false,
   "spriteId": {
     "name": "Sprite17",
-    "path": "sprites/Sprite17/Sprite17.yy"
+    "path": "sprites/Sprite17/Sprite17.yy",
   },
   "spriteMaskId": null,
-  "visible": true
+  "visible": true,
 }
