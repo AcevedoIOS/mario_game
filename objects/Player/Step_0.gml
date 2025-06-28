@@ -96,6 +96,7 @@ if (_carrier_side != noone && (y + sprite_height > _carrier_side.y)) {
 var _vsp_sign = sign(vsp);
 var _vsp_abs = abs(vsp);
 var _steps = ceil(_vsp_abs);
+var stand_carrier = noone;
 
 for (var i = 0; i < _steps; i++) {
     // Verificar colisión con Solid
@@ -127,9 +128,7 @@ for (var i = 0; i < _steps; i++) {
             on_ground = true;
             vsp = 0;
             y = _carrier.y - sprite_height;
-            if (is_undefined(_carrier.onRide) == false) {
-                _carrier.onRide(self);
-            }
+            stand_carrier = _carrier;
         } else {
             state = PlayerState.DEAD;
             vsp = -10;
@@ -167,10 +166,16 @@ if (!place_meeting(x, y + 1, Solid) && !place_meeting(x, y + 1, SemiSolid) && !p
 }
 
 // Trigger carrier behaviour if standing on one
-var _stand_carrier = instance_place(x, y + 1, EnemyCarrier);
+var _stand_carrier = stand_carrier;
+if (_stand_carrier == noone) {
+    _stand_carrier = instance_place(x, y + 1, EnemyCarrier);
+}
 if (_stand_carrier != noone && y + sprite_height == _stand_carrier.y) {
     if (is_undefined(_stand_carrier.onRide) == false) {
         _stand_carrier.onRide(self);
+        // Mantener al jugador sobre el carrier después de moverlo
+        y = _stand_carrier.y - sprite_height;
+        on_ground = true;
     }
 }
 
