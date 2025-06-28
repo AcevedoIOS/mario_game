@@ -96,6 +96,8 @@
     {"id":{"name":"Thwomp","path":"objects/Thwomp/Thwomp.yy",},},
     {"id":{"name":"Blooper","path":"objects/Blooper/Blooper.yy",},},
     {"id":{"name":"EnemyJumper","path":"objects/EnemyJumper/EnemyJumper.yy",},},
+    {"id":{"name":"EnemyCarrier","path":"objects/EnemyCarrier/EnemyCarrier.yy",},},
+    {"id":{"name":"LiftBird","path":"objects/LiftBird/LiftBird.yy",},},
     {"id":{"name":"Sprite19","path":"sprites/Sprite19/Sprite19.yy",},},
     {"id":{"name":"Sprite32","path":"sprites/Sprite32/Sprite32.yy",},},
     {"id":{"name":"LavaBall","path":"objects/LavaBall/LavaBall.yy",},},
