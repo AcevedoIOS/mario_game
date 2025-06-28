@@ -80,6 +80,8 @@
     {"id":{"name":"EnemyDropper","path":"objects/EnemyDropper/EnemyDropper.yy",},},
     {"id":{"name":"Thwomp","path":"objects/Thwomp/Thwomp.yy",},},
     {"id":{"name":"Blooper","path":"objects/Blooper/Blooper.yy",},},
+    {"id":{"name":"EnemyJumper","path":"objects/EnemyJumper/EnemyJumper.yy",},},
+    {"id":{"name":"LavaBall","path":"objects/LavaBall/LavaBall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
