@@ -49,5 +49,7 @@
     {"name":"EnemyIntouchable","order":3,"path":"objects/EnemyIntouchable/EnemyIntouchable.yy",},
     {"name":"Goomba","order":2,"path":"objects/Goomba/Goomba.yy",},
     {"name":"GreenKoopa","order":5,"path":"objects/GreenKoopa/GreenKoopa.yy",},
+    {"name":"EnemyDropper","order":6,"path":"objects/EnemyDropper/EnemyDropper.yy",},
+    {"name":"Thwomp","order":7,"path":"objects/Thwomp/Thwomp.yy",},
   ],
 }

@@ -77,6 +77,8 @@
     {"id":{"name":"EnemyIntouchable","path":"objects/EnemyIntouchable/EnemyIntouchable.yy",},},
     {"id":{"name":"Goomba","path":"objects/Goomba/Goomba.yy",},},
     {"id":{"name":"GreenKoopa","path":"objects/GreenKoopa/GreenKoopa.yy",},},
+    {"id":{"name":"EnemyDropper","path":"objects/EnemyDropper/EnemyDropper.yy",},},
+    {"id":{"name":"Thwomp","path":"objects/Thwomp/Thwomp.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
