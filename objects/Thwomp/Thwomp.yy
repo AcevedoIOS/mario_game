@@ -4,17 +4,17 @@
   "name": "Thwomp",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,}
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy"
+    "name": "Castle",
+    "path": "folders/Objetos/Enemies/Castle.yy",
   },
   "parentObjectId": {
     "name": "EnemyDropper",
-    "path": "objects/EnemyDropper/EnemyDropper.yy"
+    "path": "objects/EnemyDropper/EnemyDropper.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +33,8 @@
   "solid": false,
   "spriteId": {
     "name": "npc_37",
-    "path": "sprites/npc_37/npc_37.yy"
+    "path": "sprites/npc_37/npc_37.yy",
   },
   "spriteMaskId": null,
-  "visible": true
+  "visible": true,
 }

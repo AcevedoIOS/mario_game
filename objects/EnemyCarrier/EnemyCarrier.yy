@@ -4,17 +4,17 @@
   "name": "EnemyCarrier",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,}
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy"
+    "name": "Base",
+    "path": "folders/Objetos/Enemies/Base.yy",
   },
   "parentObjectId": {
     "name": "EnemyIntouchable",
-    "path": "objects/EnemyIntouchable/EnemyIntouchable.yy"
+    "path": "objects/EnemyIntouchable/EnemyIntouchable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,5 +33,5 @@
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
-  "visible": true
+  "visible": true,
 }

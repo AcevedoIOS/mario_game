@@ -4,17 +4,17 @@
   "name": "LiftBird",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,}
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy"
+    "name": "Other",
+    "path": "folders/Objetos/Enemies/Other.yy",
   },
   "parentObjectId": {
     "name": "EnemyCarrier",
-    "path": "objects/EnemyCarrier/EnemyCarrier.yy"
+    "path": "objects/EnemyCarrier/EnemyCarrier.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +33,8 @@
   "solid": false,
   "spriteId": {
     "name": "Sprite19",
-    "path": "sprites/Sprite19/Sprite19.yy"
+    "path": "sprites/Sprite19/Sprite19.yy",
   },
   "spriteMaskId": null,
-  "visible": true
+  "visible": true,
 }

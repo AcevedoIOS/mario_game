@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy",
+    "name": "Plant",
+    "path": "folders/Objetos/Enemies/Plant.yy",
   },
   "parentObjectId": {
     "name": "EnemyIntouchable",

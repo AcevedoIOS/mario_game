@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy",
+    "name": "Koopa",
+    "path": "folders/Objetos/Enemies/Koopa.yy",
   },
   "parentObjectId": {
     "name": "EnemyStompable",

@@ -4,17 +4,17 @@
   "name": "Blooper",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,}
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy"
+    "name": "Water",
+    "path": "folders/Objetos/Enemies/Water.yy",
   },
   "parentObjectId": {
     "name": "EnemySwimmer",
-    "path": "objects/EnemySwimmer/EnemySwimmer.yy"
+    "path": "objects/EnemySwimmer/EnemySwimmer.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +33,8 @@
   "solid": false,
   "spriteId": {
     "name": "Sprite18",
-    "path": "sprites/Sprite18/Sprite18.yy"
+    "path": "sprites/Sprite18/Sprite18.yy",
   },
   "spriteMaskId": null,
-  "visible": true
+  "visible": true,
 }
