@@ -79,7 +79,7 @@ if (vsp > 15) {
 }
 
 // Colisión horizontal
-if (place_meeting(x + hsp, y, Solid)) {
+if (place_meeting(x + hsp, y, Solid) || place_meeting(x + hsp, y, BrickBase)) {
     hsp = 0;
 }
 x += hsp;
@@ -110,6 +110,22 @@ for (var i = 0; i < _steps; i++) {
         break;
     }
     
+	 // Verificar colisión con ladrillos
+    var _brick = instance_place(x, y + _vsp_sign, BrickBase);
+    if (_brick != noone) {
+        if (_vsp_sign < 0) {
+            if (is_undefined(_brick.onHit) == false) {
+                _brick.onHit();
+            }
+            vsp = 0;
+        } else {
+            on_ground = true;
+            vsp = 0;
+            y = _brick.y - sprite_height;
+        }
+        break;
+    }
+	
     // Verificar colisión con SemiSolid
     if (place_meeting(x, y + _vsp_sign, SemiSolid)) {
         // Solo colisionar si está cayendo
@@ -161,7 +177,7 @@ for (var i = 0; i < _steps; i++) {
 }
 
 // Si no está en el suelo, actualizar on_ground
-if (!place_meeting(x, y + 1, Solid) && !place_meeting(x, y + 1, SemiSolid) && !place_meeting(x, y + 1, EnemyCarrier)) {
+if (!place_meeting(x, y + 1, Solid) && !place_meeting(x, y + 1, SemiSolid) && !place_meeting(x, y + 1, EnemyCarrier) && !place_meeting(x, y + 1, BrickBase)) {
     on_ground = false;
 }
 
