@@ -84,10 +84,19 @@ if (place_meeting(x + hsp, y, Solid)) {
 }
 x += hsp;
 
+// Check collision with carriers from the side
+var _carrier_side = instance_place(x, y, EnemyCarrier);
+if (_carrier_side != noone && (y + sprite_height > _carrier_side.y)) {
+    state = PlayerState.DEAD;
+    vsp = -10;
+    hsp = 0;
+}
+
 // Colisión vertical mejorada
 var _vsp_sign = sign(vsp);
 var _vsp_abs = abs(vsp);
 var _steps = ceil(_vsp_abs);
+var stand_carrier = noone;
 
 for (var i = 0; i < _steps; i++) {
     // Verificar colisión con Solid
@@ -111,7 +120,23 @@ for (var i = 0; i < _steps; i++) {
         }
         // Si está subiendo, permitir atravesar
     }
-    
+
+    // Verificar colisión con enemigos que se pueden pisar (EnemyCarrier)
+    var _carrier = instance_place(x, y + _vsp_sign, EnemyCarrier);
+    if (_carrier != noone) {
+        if (_vsp_sign > 0 && y + sprite_height <= _carrier.y) {
+            on_ground = true;
+            vsp = 0;
+            y = _carrier.y - sprite_height;
+            stand_carrier = _carrier;
+        } else {
+            state = PlayerState.DEAD;
+            vsp = -10;
+            hsp = 0;
+        }
+        break;
+    }
+
     // Verificar colisión con enemigo aplastable
     var _enemy = instance_place(x + hsp, y, EnemyStompable); // Primero verificar colisión horizontal
     if (_enemy != noone && !_enemy.stomped) {
@@ -136,8 +161,22 @@ for (var i = 0; i < _steps; i++) {
 }
 
 // Si no está en el suelo, actualizar on_ground
-if (!place_meeting(x, y + 1, Solid) && !place_meeting(x, y + 1, SemiSolid)) {
+if (!place_meeting(x, y + 1, Solid) && !place_meeting(x, y + 1, SemiSolid) && !place_meeting(x, y + 1, EnemyCarrier)) {
     on_ground = false;
+}
+
+// Trigger carrier behaviour if standing on one
+var _stand_carrier = stand_carrier;
+if (_stand_carrier == noone) {
+    _stand_carrier = instance_place(x, y + 1, EnemyCarrier);
+}
+if (_stand_carrier != noone && y + sprite_height == _stand_carrier.y) {
+    if (is_undefined(_stand_carrier.onRide) == false) {
+        _stand_carrier.onRide(self);
+        // Mantener al jugador sobre el carrier después de moverlo
+        y = _stand_carrier.y - sprite_height;
+        on_ground = true;
+    }
 }
 
 // Máquina de estados
