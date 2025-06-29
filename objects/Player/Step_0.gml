@@ -121,7 +121,6 @@ for (var i = 0; i < _steps; i++) {
         } else {
             on_ground = true;
             vsp = 0;
-            y = _brick.y - sprite_height;
         }
         break;
     }
