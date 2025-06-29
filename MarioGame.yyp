@@ -95,6 +95,8 @@
     {"id":{"name":"spr_smario_jump","path":"sprites/spr_smario_jump/spr_smario_jump.yy",},},
     {"id":{"name":"spr_block_solid","path":"sprites/spr_block_solid/spr_block_solid.yy",},},
     {"id":{"name":"Solid","path":"objects/Solid/Solid.yy",},},
+    {"id":{"name":"BrickBase","path":"objects/BrickBase/BrickBase.yy",},},
+    {"id":{"name":"BrickBlock","path":"objects/BrickBlock/BrickBlock.yy",},},
     {"id":{"name":"Sprite31","path":"sprites/Sprite31/Sprite31.yy",},},
     {"id":{"name":"EnemyStompable","path":"objects/EnemyStompable/EnemyStompable.yy",},},
     {"id":{"name":"EnemyIntouchable","path":"objects/EnemyIntouchable/EnemyIntouchable.yy",},},
