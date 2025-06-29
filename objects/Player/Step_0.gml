@@ -79,7 +79,7 @@ if (vsp > 15) {
 }
 
 // Colisión horizontal
-if (place_meeting(x + hsp, y, Solid)) {
+if (place_meeting(x + hsp, y, Solid) || place_meeting(x + hsp, y, BrickBase)) {
     hsp = 0;
 }
 x += hsp;
@@ -177,7 +177,7 @@ for (var i = 0; i < _steps; i++) {
 }
 
 // Si no está en el suelo, actualizar on_ground
-if (!place_meeting(x, y + 1, Solid) && !place_meeting(x, y + 1, SemiSolid) && !place_meeting(x, y + 1, EnemyCarrier)) {
+if (!place_meeting(x, y + 1, Solid) && !place_meeting(x, y + 1, SemiSolid) && !place_meeting(x, y + 1, EnemyCarrier) && !place_meeting(x, y + 1, BrickBase)) {
     on_ground = false;
 }
 
